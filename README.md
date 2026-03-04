@@ -21,31 +21,34 @@ It enforces policy, capability boundaries, and deterministic execution before mo
 
 Eric sits between application code and AI models to enforce policy and deterministic execution.
 
-Application Request
+App Input
+   │
+   ▼
+Schema Validation
+   │
+   ▼
+Input Risk Analysis
+   │
+   ▼
+Execution Policy
+   │
+   ▼
+Allowed Capability?
+   │
+   ├── No → Block + Audit Log
+   │
+   └── Yes
         │
         ▼
-Input Validation
+Model Routing
         │
         ▼
-Risk Evaluation
-(prompt injection detection)
+LLM Execution
         │
         ▼
-Policy Enforcement
-(capability + tenant rules)
-        │
-        ▼
-Deterministic Routing
-(select model / allowed flow)
-        │
-        ▼
-Model Execution
-(OpenAI / Gemini / Anthropic)
-        │
-        ▼
-Output Validation
-(structure + safety checks)
+Output Verification
         │
         ▼
 Verified Response
-returned to application
+
+All decisions are logged in an auditable execution ledger.
