@@ -21,6 +21,7 @@ It enforces policy, capability boundaries, and deterministic execution before mo
 
 Eric sits between application code and AI models to enforce policy and deterministic execution.
 
+```
 App Input
    │
    ▼
@@ -50,5 +51,6 @@ Output Verification
         │
         ▼
 Verified Response
+```
 
 All decisions are logged in an auditable execution ledger.
