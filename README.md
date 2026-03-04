@@ -1,16 +1,18 @@
-## Hi there 👋
+# Rod Bridges
 
-<!--
-**rodbridges-dev/rodbridges-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend engineer building governed AI runtimes and production-safe LLM systems.
 
-Here are some ideas to get you started:
+## Eric AI Runtime
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Eric is a governed runtime for AI systems operating in regulated and high-stakes environments.
+
+It enforces policy, capability boundaries, and deterministic execution before model responses reach production systems.
+
+🔗 https://ericaicontrol.dev
+
+## Focus
+
+• AI runtime infrastructure  
+• policy enforcement and execution control  
+• production-safe LLM systems  
+• Node.js / TypeScript backend architecture
