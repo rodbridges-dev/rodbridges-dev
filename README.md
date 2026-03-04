@@ -19,7 +19,7 @@ It enforces policy, capability boundaries, and deterministic execution before mo
 
 ## Eric Runtime Architecture
 
-Eric sits between application code and AI models to enforce policy and deterministic execution.
+Eric is a runtime layer that sits between application code and AI models to enforce policy and deterministic execution.
 
 ```
 App Input
