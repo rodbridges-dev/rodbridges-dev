@@ -4,7 +4,7 @@ Backend engineer building governed AI runtimes and production-safe LLM systems.
 
 ## Eric AI Runtime
 
-Eric is a governed runtime for AI systems operating in regulated and high-stakes environments.
+Eric is a governed runtime that enforces policy, capability boundaries, and deterministic execution for AI systems operating in regulated environments.
 
 It enforces policy, capability boundaries, and deterministic execution before model responses reach production systems.
 
