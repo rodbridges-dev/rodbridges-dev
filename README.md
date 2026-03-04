@@ -16,3 +16,36 @@ It enforces policy, capability boundaries, and deterministic execution before mo
 • policy enforcement and execution control  
 • production-safe LLM systems  
 • Node.js / TypeScript backend architecture
+
+## Eric Runtime Architecture
+
+Eric sits between application code and AI models to enforce policy and deterministic execution.
+
+Application Request
+        │
+        ▼
+Input Validation
+        │
+        ▼
+Risk Evaluation
+(prompt injection detection)
+        │
+        ▼
+Policy Enforcement
+(capability + tenant rules)
+        │
+        ▼
+Deterministic Routing
+(select model / allowed flow)
+        │
+        ▼
+Model Execution
+(OpenAI / Gemini / Anthropic)
+        │
+        ▼
+Output Validation
+(structure + safety checks)
+        │
+        ▼
+Verified Response
+returned to application
