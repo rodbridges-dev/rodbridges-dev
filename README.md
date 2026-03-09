@@ -114,6 +114,3 @@ Modern Android architecture example using Jetpack Compose, MVVM, and Firebase.
 ## Location
 
 New York City Metropolitan Area
-
-Eric acts as a control layer between application code and AI model execution.
-
