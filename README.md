@@ -17,7 +17,7 @@ It enforces policy, capability boundaries, and deterministic execution before mo
 • production-safe LLM systems  
 • Node.js / TypeScript backend architecture
 
-## Eric Runtime Architecture
+## How Eric Governs AI Execution
 
 Eric is a runtime layer that sits between application code and AI models to enforce policy and deterministic execution.
 
