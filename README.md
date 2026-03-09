@@ -6,7 +6,7 @@ I focus on building infrastructure that allows AI systems to operate safely and 
 
 ---
 
-# Eric — Governed AI Execution Runtime
+# Eric, Governed AI Execution Runtime
 
 Eric is a governed runtime layer for AI systems operating in regulated or production-critical environments.
 
