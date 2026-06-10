@@ -1,18 +1,25 @@
 # Rod Bridges
 
-Backend engineer building governed AI runtimes and production-safe LLM systems.
-
-I focus on building infrastructure that allows AI systems to operate safely and deterministically in real production environments.
+Founder & CTO, Eric AI
+Backend Engineer | AI Governance Infrastructure
 
 ---
 
-# Eric: Governed AI Execution Runtime
+# Eric AI
 
-Eric is a governed runtime layer for AI systems operating in regulated or production-critical environments.
+## One Governance Layer. Every Application. Any Model.
 
-Instead of allowing applications to call AI models directly, requests pass through Eric where policy rules, capability boundaries, and deterministic output validation are enforced before responses reach production systems.
+Most organizations don't have one AI application anymore. They have many.
 
-The goal is to make AI execution **predictable, auditable, and production-safe**.
+As AI adoption grows, governance becomes fragmented. Different applications implement different controls, different audit trails, different policies, and often different AI providers.
+
+Eric provides a centralized governance layer that sits between applications and AI models.
+
+Applications invoke approved capabilities through Eric, where authorization, policy enforcement, output compliance, and audit logging are applied consistently before execution reaches a model.
+
+The model becomes the execution engine.
+
+Eric becomes the control plane.
 
 https://ericaicontrol.dev
 
@@ -20,83 +27,68 @@ https://ericaicontrol.dev
 
 ## Focus
 
-• AI runtime infrastructure  
-• Policy enforcement for AI execution  
-• Deterministic LLM output validation  
-• Safe capability routing for AI systems  
-• Node.js / TypeScript backend architecture  
+• Centralized AI governance  
+• Capability authorization and control  
+• AI policy enforcement  
+• Audit and compliance infrastructure  
+• Node.js / TypeScript backend architecture
 
 ---
 
-## Key Capabilities
+## What Eric Does
 
-• Policy-governed AI execution  
-• Capability allow-listing and risk analysis  
-• Deterministic output validation  
-• Audit-safe decision logging  
-• Safe routing between AI capabilities and services  
+• Governs approved AI capabilities across applications  
+• Applies authorization and policy enforcement before execution  
+• Maintains consistent governance across AI providers  
+• Provides audit logging and execution visibility  
+• Enforces structured output contracts
 
 ---
 
-## How Eric Governs AI Execution
+## How Eric Works
 
-Eric is a runtime layer that sits between application code and AI models to enforce policy and deterministic execution.
+Applications send requests through Eric before reaching an AI provider.
 
-```
-App Input
-   │
-   ▼
-Schema Validation
-   │
-   ▼
-Input Risk Analysis
-   │
-   ▼
-Execution Policy
-   │
-   ▼
-Allowed Capability?
-   │
-   ├── No → Block + Audit Log
-   │
-   └── Yes
-        │
-        ▼
-Model Routing
-        │
-        ▼
-LLM Execution
-        │
-        ▼
-Output Verification
-        │
-        ▼
-Verified Response
+```text
+Application A ─┐
+               │
+Application B ─┼──► Eric Governance Layer ───► Claude
+               │                            ├── GPT
+Application C ─┘                            └── Gemini
+
+                    • Intent Classification
+                    • Authorization
+                    • Policy Enforcement
+                    • Capability Routing
+                    • Output Compliance
+                    • Audit Logging
 ```
 
-
-All execution decisions are recorded in an auditable execution ledger.
+Governance remains consistent regardless of the underlying AI provider.
 
 ---
 
 ## Example Use Cases
 
-• AI agents operating in regulated environments  
-• Enterprise systems requiring controlled LLM access  
-• Production workflows requiring deterministic responses  
-• Audit-compliant AI execution pipelines  
+• Organizations operating multiple AI applications  
+• Enterprise systems requiring centralized AI governance  
+• Regulated environments requiring auditability and control  
+• Teams standardizing AI execution across providers
 
 ---
 
 ## Selected Projects
 
-**Controlled LLM Workflow**  
-Structured LLM validation and allow-listed execution patterns.
+### Eric AI
 
-**Governed RAG Sandbox**  
-Experimental environment for safe RAG pipelines with execution governance.
+Centralized governance layer for AI applications.
 
-**BridgeBase**  
+### Governed RAG Sandbox
+
+Experimental environment for safe retrieval-augmented generation with governance controls.
+
+### BridgeBase
+
 Modern Android architecture example using Jetpack Compose, MVVM, and Firebase.
 
 ---
@@ -104,9 +96,9 @@ Modern Android architecture example using Jetpack Compose, MVVM, and Firebase.
 ## Technologies
 
 • Node.js / TypeScript  
-• AI runtime and policy systems  
-• LLM orchestration and governance  
-• Firebase / cloud backend services  
+• AI governance and control systems  
+• LLM orchestration and execution infrastructure  
+• Firebase and cloud backend services  
 • Modern Android architecture (Jetpack Compose)
 
 ---
