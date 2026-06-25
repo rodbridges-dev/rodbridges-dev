@@ -1,25 +1,21 @@
 # Rod Bridges
 
 Founder & CTO, Eric AI
-Backend Engineer | AI Governance Infrastructure
+Building infrastructure for governed AI workflows
 
 ---
 
 # Eric AI
 
-## One Governance Layer. Every Application. Any Model.
+## One Governance Layer. Every Workflow. Any Model.
 
 Most organizations don't have one AI application anymore. They have many.
 
-As AI adoption grows, governance becomes fragmented. Different applications implement different controls, different audit trails, different policies, and often different AI providers.
+Customer-facing assistants, internal copilots, document workflows, automation tools, and AI-powered business applications are often developed independently. As AI adoption grows, governance becomes fragmented. Different applications implement different controls, different audit trails, different policies, and often different AI providers.
 
-Eric provides a centralized governance layer that sits between applications and AI models.
+Eric provides a centralized governance layer for AI workflows.
 
-Applications invoke approved capabilities through Eric, where authorization, policy enforcement, output compliance, and audit logging are applied consistently before execution reaches a model.
-
-The model becomes the execution engine.
-
-Eric becomes the control plane.
+Organizations define workflows once and govern execution consistently across teams, applications, and AI providers. Applications invoke workflows through Eric, where authorization, policy enforcement, validation, provider routing, PII protection, and audit logging are applied before execution reaches an AI model.
 
 https://ericaicontrol.dev
 
@@ -27,53 +23,66 @@ https://ericaicontrol.dev
 
 ## Focus
 
-• Centralized AI governance  
-• Capability authorization and control  
-• AI policy enforcement  
-• Audit and compliance infrastructure  
-• Node.js / TypeScript backend architecture
+* AI workflow governance
+* Policy enforcement and authorization
+* AI execution infrastructure
+* Audit and compliance systems
+* Multi-provider AI architecture
+* Node.js / TypeScript backend engineering
 
 ---
 
 ## What Eric Does
 
-• Governs approved AI capabilities across applications  
-• Applies authorization and policy enforcement before execution  
-• Maintains consistent governance across AI providers  
-• Provides audit logging and execution visibility  
-• Enforces structured output contracts
+* Organizations define AI workflows
+* Applications invoke workflows instead of models
+* Eric governs execution before AI models are called
+* Applies authorization, policy enforcement, validation, and audit logging consistently
+* Maintains governance across applications, teams, and AI providers
+* Supports Bring Your Own Key (BYOK) and provider independence
 
 ---
 
 ## How Eric Works
 
-Applications send requests through Eric before reaching an AI provider.
+Applications invoke governed workflows through Eric.
 
 ```text
-Application A ─┐
-               │
-Application B ─┼──► Eric Governance Layer ───► Claude
-               │                            ├── GPT
-Application C ─┘                            └── Gemini
-
-                    • Intent Classification
-                    • Authorization
-                    • Policy Enforcement
-                    • Capability Routing
-                    • Output Compliance
-                    • Audit Logging
+Applications
+      │
+      ▼
+ Workflow
+      │
+      ▼
+┌─────────────────────────────┐
+│     Eric Governance Layer   │
+│                             │
+│  • Authorization            │
+│  • Policy Enforcement       │
+│  • Validation               │
+│  • Provider Routing         │
+│  • PII Protection           │
+│  • Audit Logging            │
+└─────────────────────────────┘
+      │
+      ▼
+ Claude • GPT • Gemini • Other Providers
 ```
 
-Governance remains consistent regardless of the underlying AI provider.
+When applications don't specify a workflow, Eric can intelligently select an authorized workflow based on the request while still applying the same governance controls.
 
 ---
 
 ## Example Use Cases
 
-• Organizations operating multiple AI applications  
-• Enterprise systems requiring centralized AI governance  
-• Regulated environments requiring auditability and control  
-• Teams standardizing AI execution across providers
+* Support ticket classification
+* Contract review
+* Vendor risk assessment
+* Claims processing
+* Customer response review
+* Clinical summary generation
+* Organizations operating multiple AI applications
+* Regulated environments requiring centralized governance
 
 ---
 
@@ -81,25 +90,42 @@ Governance remains consistent regardless of the underlying AI provider.
 
 ### Eric AI
 
-Centralized governance layer for AI applications.
+A centralized governance platform for AI workflows that enables organizations to define workflows once and govern execution consistently across applications and AI providers.
+
+### Workflow Builder *(In Progress)*
+
+A visual workflow designer that allows organizations to create governed AI workflows without building orchestration logic by hand.
 
 ### Governed RAG Sandbox
 
-Experimental environment for safe retrieval-augmented generation with governance controls.
+Experimental environment for retrieval-augmented generation with centralized governance controls.
 
 ### BridgeBase
 
-Modern Android architecture example using Jetpack Compose, MVVM, and Firebase.
+Reference Android application demonstrating modern architecture using Jetpack Compose, MVVM, and Firebase.
 
 ---
 
 ## Technologies
 
-• Node.js / TypeScript  
-• AI governance and control systems  
-• LLM orchestration and execution infrastructure  
-• Firebase and cloud backend services  
-• Modern Android architecture (Jetpack Compose)
+* TypeScript
+* Node.js
+* Firebase
+* Cloud Functions
+* REST APIs
+* AI Governance
+* Workflow Execution
+* LLM Runtime Architecture
+* Android (Kotlin / Jetpack Compose)
+* iOS (Swift / SwiftUI)
+
+---
+
+## Philosophy
+
+I enjoy building backend infrastructure where correctness, governance, and reliability matter more than hype.
+
+My current work focuses on making enterprise AI systems predictable, auditable, and easier to govern at scale while allowing organizations to evolve their AI providers and workflows independently.
 
 ---
 
