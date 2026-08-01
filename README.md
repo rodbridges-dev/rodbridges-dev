@@ -41,11 +41,11 @@ https://ericaicontrol.dev
 
 ---
 
-# Architecture
+# Execution Flow
 
 ![Description](eric_ai_execution_flow.svg)
 
-Applications invoke workflows rather than individual models, allowing governance, provider selection, auditing, and policy enforcement to remain centralized even as models evolve.
+Applications invoke governed workflows. Eric applies policy, routing, validation, and auditing before execution reaches an AI provider.
 
 ---
 
