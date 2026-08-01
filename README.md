@@ -45,7 +45,7 @@ https://ericaicontrol.dev
 
 ![Description](eric_ai_execution_flow.svg)
 
-Applications invoke governed workflows. Eric applies policy, routing, validation, and auditing before execution reaches an AI provider.
+Applications invoke governed workflows. Eric applies authorization, policy enforcement, validation, provider routing, and audit logging before execution reaches an AI provider.
 
 ---
 
@@ -90,4 +90,4 @@ My focus is building enterprise AI systems that remain predictable, auditable, p
 
 # Public Repositories
 
-Additional Python AI engineering repositories will be added here as they are completed, demonstrating production patterns in FastAPI, MCP, AI evaluation, RAG, Redis, Docker, and enterprise AI infrastructure.
+Upcoming repositories will demonstrate production AI engineering patterns using Python, FastAPI, MCP, Redis, Docker, RAG, and AI evaluation.
