@@ -1,8 +1,12 @@
 # Rod Bridges
 
-Senior Software Engineer | Founder & CTO, Eric AI
+**Senior Software Engineer | Founder & CTO, Eric AI**
 
-Building enterprise AI platforms, backend infrastructure, and governed AI workflows
+Building enterprise AI platforms, backend infrastructure, and governed AI workflows.
+
+📍 Denver, CO
+
+🌐 https://ericaicontrol.dev
 
 ---
 
@@ -10,132 +14,100 @@ Building enterprise AI platforms, backend infrastructure, and governed AI workfl
 
 ## One Governance Layer. Every Workflow. Any Model.
 
-Most organizations don't have one AI application anymore. They have many.
+Modern organizations rarely have a single AI application.
 
-Customer-facing assistants, internal copilots, document workflows, automation tools, and AI-powered business applications are often developed independently. As AI adoption grows, governance becomes fragmented. Different applications implement different controls, different audit trails, different policies, and often different AI providers.
+They have customer-facing assistants, internal copilots, document workflows, automation services, and AI-powered business applications that evolve independently. As AI adoption grows, governance often becomes fragmented across applications, teams, providers, and policies.
 
-Eric provides a centralized governance layer for AI workflows.
+Eric provides a centralized execution platform for enterprise AI.
 
-Organizations define workflows once and govern execution consistently across teams, applications, and AI providers. Applications invoke workflows through Eric, where authorization, policy enforcement, validation, provider routing, PII protection, and audit logging are applied before execution reaches an AI model.
+Organizations define workflows once and govern execution consistently across applications, teams, and AI providers. Applications invoke workflows through Eric, where authorization, policy enforcement, validation, provider routing, PII protection, and audit logging are applied before requests reach an AI model.
+
+Learn more:
 
 https://ericaicontrol.dev
 
 ---
 
-## Focus
+# Platform Capabilities
 
-* AI workflow governance
-* Policy enforcement and authorization
-* AI execution infrastructure
-* Audit and compliance systems
-* Multi-provider AI architecture
-* Node.js / TypeScript backend engineering
-
----
-
-## What Eric Does
-
-* Organizations define AI workflows
-* Applications invoke workflows instead of models
-* Eric governs execution before AI models are called
-* Applies authorization, policy enforcement, validation, and audit logging consistently
-* Maintains governance across applications, teams, and AI providers
-* Supports Bring Your Own Key (BYOK) and provider independence
+- Enterprise AI workflow governance
+- Policy enforcement & authorization
+- Provider abstraction
+- Workflow execution
+- Multi-provider AI architecture
+- Audit logging & observability
+- BYOK (Bring Your Own Key)
+- AI execution infrastructure
 
 ---
 
-## How Eric Works
+# Architecture
 
-Applications invoke governed workflows through Eric.
-
-```text
+```
 Applications
       │
       ▼
- Workflow
+ Governed Workflow
       │
       ▼
 ┌─────────────────────────────┐
 │     Eric Governance Layer   │
 │                             │
-│  • Authorization            │
-│  • Policy Enforcement       │
-│  • Validation               │
-│  • Provider Routing         │
-│  • PII Protection           │
-│  • Audit Logging            │
+│ • Authorization             │
+│ • Policy Enforcement        │
+│ • Validation                │
+│ • Provider Routing          │
+│ • PII Protection            │
+│ • Audit Logging             │
 └─────────────────────────────┘
       │
       ▼
- Claude • GPT • Gemini • Other Providers
+OpenAI • Claude • Gemini • Other Providers
 ```
 
-When applications don't specify a workflow, Eric can intelligently select an authorized workflow based on the request while still applying the same governance controls.
+Applications invoke workflows rather than individual models, allowing governance, provider selection, auditing, and policy enforcement to remain centralized even as models evolve.
 
 ---
 
-## Example Use Cases
+# Current Technical Focus
 
-* Support ticket classification
-* Contract review
-* Vendor risk assessment
-* Claims processing
-* Customer response review
-* Clinical summary generation
-* Organizations operating multiple AI applications
-* Regulated environments requiring centralized governance
+### Artificial Intelligence
 
----
+- Enterprise AI Platforms
+- AI Governance
+- MCP
+- Agentic AI
+- RAG
+- AI Evaluation
+- Tool Calling
 
-## Featured Projects
+### Backend Engineering
 
-### Eric AI
+- Python
+- FastAPI
+- TypeScript
+- Node.js
+- REST APIs
+- Redis
 
-A centralized governance platform for AI workflows that enables organizations to define workflows once and govern execution consistently across applications and AI providers.
+### Cloud
 
-### Workflow Builder
-
-A visual workflow designer that allows organizations to create governed AI workflows without building orchestration logic by hand.
-
-### Governed RAG Sandbox
-
-Experimental environment for retrieval-augmented generation with centralized governance controls.
-
-### BridgeBase
-
-Reference Android application demonstrating modern architecture using Jetpack Compose, MVVM, and Firebase.
+- Google Cloud
+- Firebase
+- Firestore
+- Cloud Functions
+- Docker
 
 ---
 
-## Technologies
-
-* TypeScript
-* Node.js
-* Firebase
-* Cloud Functions
-* REST APIs
-* AI Governance
-* Workflow Execution
-* LLM Runtime Architecture
-* Python
-* FastAPI
-* Docker
-* Redis
-* MCP
-* AI Evaluation
-* RAG
-* Google Cloud
-
----
-
-## Philosophy
+# Engineering Philosophy
 
 I enjoy designing backend platforms where correctness, governance, observability, and long-term maintainability matter as much as raw performance.
 
-My current work focuses on making enterprise AI systems predictable, auditable, and easier to govern at scale while allowing organizations to evolve their AI providers and workflows independently.
+My focus is building enterprise AI systems that remain predictable, auditable, provider-independent, and operationally reliable as organizations scale.
 
 ---
 
-## Location
+# Public Repositories
 
-New York City Metropolitan Area
+Additional Python AI engineering repositories will be added here as they are completed, demonstrating production patterns in FastAPI, MCP, AI evaluation, RAG, Redis, Docker, and enterprise AI infrastructure.
