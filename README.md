@@ -18,7 +18,7 @@ Modern organizations rarely have a single AI application.
 
 They have customer-facing assistants, internal copilots, document workflows, automation services, and AI-powered business applications that evolve independently. As AI adoption grows, governance often becomes fragmented across applications, teams, providers, and policies.
 
-Eric provides a centralized execution platform for enterprise AI.
+Eric is an enterprise AI platform that centralizes workflow execution, governance, policy enforcement, and provider abstraction for organizations building production AI systems.
 
 Organizations define workflows once and govern execution consistently across applications, teams, and AI providers. Applications invoke workflows through Eric, where authorization, policy enforcement, validation, provider routing, PII protection, and audit logging are applied before requests reach an AI model.
 
