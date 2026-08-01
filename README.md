@@ -1,7 +1,8 @@
 # Rod Bridges
 
-Founder & CTO, Eric AI
-Building infrastructure for governed AI workflows
+Senior Software Engineer | Founder & CTO, Eric AI
+
+Building enterprise AI platforms, backend infrastructure, and governed AI workflows
 
 ---
 
@@ -86,13 +87,13 @@ When applications don't specify a workflow, Eric can intelligently select an aut
 
 ---
 
-## Selected Projects
+## Featured Projects
 
 ### Eric AI
 
 A centralized governance platform for AI workflows that enables organizations to define workflows once and govern execution consistently across applications and AI providers.
 
-### Workflow Builder *(In Progress)*
+### Workflow Builder
 
 A visual workflow designer that allows organizations to create governed AI workflows without building orchestration logic by hand.
 
@@ -116,14 +117,20 @@ Reference Android application demonstrating modern architecture using Jetpack Co
 * AI Governance
 * Workflow Execution
 * LLM Runtime Architecture
-* Android (Kotlin / Jetpack Compose)
-* iOS (Swift / SwiftUI)
+* Python
+* FastAPI
+* Docker
+* Redis
+* MCP
+* AI Evaluation
+* RAG
+* Google Cloud
 
 ---
 
 ## Philosophy
 
-I enjoy building backend infrastructure where correctness, governance, and reliability matter more than hype.
+I enjoy designing backend platforms where correctness, governance, observability, and long-term maintainability matter as much as raw performance.
 
 My current work focuses on making enterprise AI systems predictable, auditable, and easier to govern at scale while allowing organizations to evolve their AI providers and workflows independently.
 
